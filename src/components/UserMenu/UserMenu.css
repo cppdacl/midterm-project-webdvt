@@ -1,0 +1,44 @@
+.floating-user {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(34, 31, 49, 0.8);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+    z-index: 100;
+}
+
+.user-pfp {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #a855f7;
+}
+
+.user-btn {
+    padding: 0.2rem 0.6rem;
+    background-color: #a855f7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.user-btn:hover {
+    background-color: #9333ea;
+}
+
+.user-btn.logout {
+    background-color: #643c61;
+}
+
+.user-btn.logout:hover {
+    background-color: #a12f9b;
+}

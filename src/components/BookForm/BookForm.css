@@ -1,0 +1,178 @@
+.bookform-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 19, 26, 0.75);
+    backdrop-filter: blur(6px);
+    z-index: 200;
+}
+
+.bookform-modal {
+    background: rgba(44, 44, 60, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    color: #fff;
+    animation: fadeIn 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #604b8d;
+    color: #d4c0d9;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    background: #9333ea;
+    transform: scale(1.1);
+}
+
+.bookform-modal h2 {
+    margin-bottom: 1rem;
+    color: #c084fc;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.bookform-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bookform-modal form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.bookform-modal input[type="date"],
+.bookform-modal input[type="number"],
+.bookform-modal select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    background: rgba(68, 68, 90, 0.8);
+    color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.bookform-modal input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(60%) sepia(80%) saturate(500%) hue-rotate(250deg) brightness(1.1);
+    cursor: pointer;
+}
+
+.bookform-modal input[type="date"]:focus,
+.bookform-modal select:focus,
+.bookform-modal input[type="number"]:focus {
+    outline: 2px solid #a855f7;
+}
+
+.bookform-modal input[type="date"]::placeholder {
+    color: #c084fc;
+    font-weight: 500;
+}
+
+.bookform-modal select {
+    cursor: pointer;
+    color: #fff;
+}
+
+.bookform-modal select option {
+    background: rgba(44, 44, 60, 0.95);
+    color: #fff;
+}
+
+.book-btn {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #604b8d;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+    color: rgb(237, 230, 239);
+}
+
+.book-btn:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+
+.total-price {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #cdb3d2;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    letter-spacing: 0.5px;
+}
+
+.error {
+    color: #ff6b6b;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.booking-success {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(72, 61, 139, 0.85);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease, fadeOut 0.3s ease 2.0s forwards;
+    z-index: 300;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+}

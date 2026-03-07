@@ -1,0 +1,48 @@
+.unknown-container {
+    text-align: center;
+    margin-top: 5rem;
+    color: #e5e5e5;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.unknown-icon {
+    font-size: 6rem;
+    color: #a855f7;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.unknown-icon:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.unknown-container h1 {
+    font-size: 5rem;
+    margin: 0;
+    color: #a855f7;
+}
+
+.unknown-container p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.home-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background-color: #a855f7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #9333ea;
+    transform: scale(1.05);
+}

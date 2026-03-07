@@ -1,0 +1,30 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 600px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #1d1d2c, #271f2b);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+.search-bar:focus {
+    background: linear-gradient(135deg, #3a3a5a, #2c2c44);
+    box-shadow: 0 0 2px rgba(168, 85, 247, 0.25);
+
+    transform: scale(1.005);
+}
